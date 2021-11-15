@@ -103,8 +103,8 @@ function printReply(reply) {
 function handleNewCommentSubmit(event) {
   event.preventDefault();
 
-  const commentBody = $newCommentForm.querySelector('#comment').value;
-  const writtenBy = $newCommentForm.querySelector('#written-by').value;
+  const commentBody = $newCommentForm.querySelector('#comment').value.trim();
+  const writtenBy = $newCommentForm.querySelector('#written-by').value.trim();
 
   if (!commentBody || !writtenBy) {
     return false;
