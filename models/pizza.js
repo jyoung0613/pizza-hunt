@@ -11,7 +11,6 @@ const PizzaSchema = new Schema(
     createdBy: {
       type: String,
       required: true,
-      trim: true
     },
     createdAt: {
       type: Date,
